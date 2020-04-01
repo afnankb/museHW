@@ -1,0 +1,2666 @@
+  [1m[35m (21.3ms)[0m  [1m[35mCREATE DATABASE "muse_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "muse_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (19.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (22.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (2.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (10.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/" for ::1 at 2020-03-30 16:12:16 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.4.2/lib/rails/templates/rails/welcome/index.html.erb (9.6ms)
+Completed 200 OK in 41ms (Views: 23.6ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtists (20200330131236)
+  [1m[35m (17.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (50.9ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200330131236_create_artists.rb:3
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (19.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtists (20200330131236)
+  [1m[35m (17.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (26.8ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200330131236_create_artists.rb:3
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (20.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (18.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtists (20200330131236)
+  [1m[35m (17.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (26.9ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200330131236_create_artists.rb:3
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ bin/rails:9
+  [1m[35m (18.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (17.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (427.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "muse_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (378.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "muse_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (2753.5ms)[0m  [1m[35mCREATE DATABASE "muse_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1174.9ms)[0m  [1m[35mCREATE DATABASE "muse_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (51.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (124.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateArtists (20200330131236)
+  [1m[35m (12.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (128.1ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200330131236_create_artists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (20.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200330131236"]]
+  ↳ bin/rails:9
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateSongs (20200330131813)
+  [1m[35m (1.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (95.9ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "artist_id" bigint, "title" character varying, "genre" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_5ce8fd4cc7"
+FOREIGN KEY ("artist_id")
+  REFERENCES "artists" ("id")
+)[0m
+  ↳ db/migrate/20200330131813_create_songs.rb:3
+  [1m[35m (48.9ms)[0m  [1m[35mCREATE  INDEX  "index_songs_on_artist_id" ON "songs"  ("artist_id")[0m
+  ↳ db/migrate/20200330131813_create_songs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (22.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200330131813"]]
+  ↳ bin/rails:9
+  [1m[35m (45.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (14.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (21.0ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-30 13:20:34.567968"], ["updated_at", "2020-03-30 13:20:34.567968"]]
+  ↳ bin/rails:9
+  [1m[35m (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (19.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (21.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (17.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Create (21.9ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rihanna"], ["hometown", "Barbados"], ["img", "http://mccarthyamp.com/wp-content/uploads/2016/02/23445669273_bfc7c4062b_b.jpg"], ["albums", 6], ["created_at", "2020-03-30 13:20:35.141562"], ["updated_at", "2020-03-30 13:20:35.141562"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (17.9ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taylor Swift"], ["hometown", "Nashville"], ["img", "https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png"], ["albums", 8], ["created_at", "2020-03-30 13:20:35.171173"], ["updated_at", "2020-03-30 13:20:35.171173"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mArtist Create (17.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Billy Joel"], ["hometown", "Long Island"], ["img", "https://images-na.ssl-images-amazon.com/images/I/81RgoBLQOKL._SY355_.jpg"], ["albums", 14], ["created_at", "2020-03-30 13:20:35.195848"], ["updated_at", "2020-03-30 13:20:35.195848"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (24.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (18.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Create (19.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Drake"], ["hometown", "Toronto"], ["img", "http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"], ["albums", 4], ["created_at", "2020-03-30 13:20:35.266279"], ["updated_at", "2020-03-30 13:20:35.266279"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mArtist Create (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beyonce"], ["hometown", "Houston"], ["img", "http://www.fuse.tv/image/571c26a6017704456e00001b/816/545/beyonce-lemonade-album-cover-full.jpg"], ["albums", 6], ["created_at", "2020-03-30 13:20:35.292797"], ["updated_at", "2020-03-30 13:20:35.292797"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (19.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (6.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mSong Create (164.7ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 1], ["title", "Umbrella"], ["genre", "Pop"], ["created_at", "2020-03-30 13:20:35.475771"], ["updated_at", "2020-03-30 13:20:35.475771"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (18.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mSong Create (18.5ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 2], ["title", "Shake It Off"], ["genre", "Pop"], ["created_at", "2020-03-30 13:20:35.670812"], ["updated_at", "2020-03-30 13:20:35.670812"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mArtist Load (19.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mSong Create (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 3], ["title", "Pressure"], ["genre", "Rock"], ["created_at", "2020-03-30 13:20:35.715883"], ["updated_at", "2020-03-30 13:20:35.715883"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mSong Create (7.2ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 4], ["title", "Hotline Bling"], ["genre", "Rap"], ["created_at", "2020-03-30 13:20:35.931803"], ["updated_at", "2020-03-30 13:20:35.931803"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (1.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (18.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mSong Create (1.0ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 5], ["title", "Lemonade"], ["genre", "R&B"], ["created_at", "2020-03-30 13:20:35.968443"], ["updated_at", "2020-03-30 13:20:35.968443"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (18.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (496.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "muse_development"[0m
+  ↳ bin/rails:9
+  [1m[35m (303.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "muse_test"[0m
+  ↳ bin/rails:9
+  [1m[35m (1125.3ms)[0m  [1m[35mCREATE DATABASE "muse_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (1054.4ms)[0m  [1m[35mCREATE DATABASE "muse_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (1.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (19.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "artists" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (76.8ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (19.3ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (53.1ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "artist_id" bigint, "title" character varying, "genre" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE  INDEX  "index_songs_on_artist_id" ON "songs"  ("artist_id")[0m
+  ↳ db/schema.rb:27
+  [1m[35m (25.6ms)[0m  [1m[35mALTER TABLE "songs" ADD CONSTRAINT "fk_rails_5ce8fd4cc7"
+FOREIGN KEY ("artist_id")
+  REFERENCES "artists" ("id")
+[0m
+  ↳ db/schema.rb:36
+  [1m[35m (25.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (21.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200330131813)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200330131236);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (26.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (12.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-30 13:20:59.315505"], ["updated_at", "2020-03-30 13:20:59.315505"]]
+  ↳ db/schema.rb:13
+  [1m[35m (19.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (17.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35mSQL (20.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  ↳ db/schema.rb:16
+  [1m[35m (17.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "artists" CASCADE[0m
+  ↳ db/schema.rb:18
+  [1m[35m (78.6ms)[0m  [1m[35mCREATE TABLE "artists" ("id" bigserial primary key, "name" character varying, "hometown" character varying, "img" character varying, "albums" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:18
+  [1m[35m (18.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "songs" CASCADE[0m
+  ↳ db/schema.rb:27
+  [1m[35m (29.2ms)[0m  [1m[35mCREATE TABLE "songs" ("id" bigserial primary key, "artist_id" bigint, "title" character varying, "genre" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:27
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE  INDEX  "index_songs_on_artist_id" ON "songs"  ("artist_id")[0m
+  ↳ db/schema.rb:27
+  [1m[35m (45.3ms)[0m  [1m[35mALTER TABLE "songs" ADD CONSTRAINT "fk_rails_5ce8fd4cc7"
+FOREIGN KEY ("artist_id")
+  REFERENCES "artists" ("id")
+[0m
+  ↳ db/schema.rb:36
+  [1m[35m (24.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (19.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ db/schema.rb:13
+  [1m[35m (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200330131813)[0m
+  ↳ db/schema.rb:13
+  [1m[35m (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20200330131236);
+
+[0m
+  ↳ db/schema.rb:13
+  [1m[35m (26.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (19.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ db/schema.rb:13
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Create (1.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-03-30 13:20:59.966540"], ["updated_at", "2020-03-30 13:20:59.966540"]]
+  ↳ db/schema.rb:13
+  [1m[35m (20.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/schema.rb:13
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (19.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Update (0.7ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2020-03-30 13:21:00.015369"], ["key", "environment"]]
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (20.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (10.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:9
+  [1m[36mArtist Create (2.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Rihanna"], ["hometown", "Barbados"], ["img", "http://mccarthyamp.com/wp-content/uploads/2016/02/23445669273_bfc7c4062b_b.jpg"], ["albums", 6], ["created_at", "2020-03-30 13:21:00.340471"], ["updated_at", "2020-03-30 13:21:00.340471"]]
+  ↳ db/seeds.rb:9
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:10
+  [1m[36mArtist Create (0.8ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Taylor Swift"], ["hometown", "Nashville"], ["img", "https://upload.wikimedia.org/wikipedia/en/f/f6/Taylor_Swift_-_1989.png"], ["albums", 8], ["created_at", "2020-03-30 13:21:00.366438"], ["updated_at", "2020-03-30 13:21:00.366438"]]
+  ↳ db/seeds.rb:10
+  [1m[35m (19.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:10
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:11
+  [1m[36mArtist Create (1.2ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Billy Joel"], ["hometown", "Long Island"], ["img", "https://images-na.ssl-images-amazon.com/images/I/81RgoBLQOKL._SY355_.jpg"], ["albums", 14], ["created_at", "2020-03-30 13:21:00.391649"], ["updated_at", "2020-03-30 13:21:00.391649"]]
+  ↳ db/seeds.rb:11
+  [1m[35m (18.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:11
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:12
+  [1m[36mArtist Create (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Drake"], ["hometown", "Toronto"], ["img", "http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"], ["albums", 4], ["created_at", "2020-03-30 13:21:00.416294"], ["updated_at", "2020-03-30 13:21:00.416294"]]
+  ↳ db/seeds.rb:12
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:12
+  [1m[35m (18.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:13
+  [1m[36mArtist Create (0.9ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Beyonce"], ["hometown", "Houston"], ["img", "http://www.fuse.tv/image/571c26a6017704456e00001b/816/545/beyonce-lemonade-album-cover-full.jpg"], ["albums", 6], ["created_at", "2020-03-30 13:21:00.440138"], ["updated_at", "2020-03-30 13:21:00.440138"]]
+  ↳ db/seeds.rb:13
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:13
+  [1m[35m (12.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:19
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ db/seeds.rb:19
+  [1m[36mSong Create (21.3ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 1], ["title", "Umbrella"], ["genre", "Pop"], ["created_at", "2020-03-30 13:21:00.543365"], ["updated_at", "2020-03-30 13:21:00.543365"]]
+  ↳ db/seeds.rb:19
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:19
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:20
+  [1m[36mArtist Load (18.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ db/seeds.rb:20
+  [1m[36mSong Create (1.2ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 2], ["title", "Shake It Off"], ["genre", "Pop"], ["created_at", "2020-03-30 13:21:00.590345"], ["updated_at", "2020-03-30 13:21:00.590345"]]
+  ↳ db/seeds.rb:20
+  [1m[35m (20.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:20
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:21
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ db/seeds.rb:21
+  [1m[36mSong Create (19.4ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 3], ["title", "Pressure"], ["genre", "Rock"], ["created_at", "2020-03-30 13:21:00.619228"], ["updated_at", "2020-03-30 13:21:00.619228"]]
+  ↳ db/seeds.rb:21
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:21
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:22
+  [1m[36mArtist Load (18.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ db/seeds.rb:22
+  [1m[36mSong Create (1.0ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 4], ["title", "Hotline Bling"], ["genre", "Rap"], ["created_at", "2020-03-30 13:21:00.665725"], ["updated_at", "2020-03-30 13:21:00.665725"]]
+  ↳ db/seeds.rb:22
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:22
+  [1m[35m (18.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ db/seeds.rb:23
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ db/seeds.rb:23
+  [1m[36mSong Create (0.8ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 5], ["title", "Lemonade"], ["genre", "R&B"], ["created_at", "2020-03-30 13:21:00.692074"], ["updated_at", "2020-03-30 13:21:00.692074"]]
+  ↳ db/seeds.rb:23
+  [1m[35m (19.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ db/seeds.rb:23
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mArtist Load (19.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mSong Load (19.3ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 1], ["LIMIT", 11]]
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mSong Create (37.2ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 1], ["title", "Diamonds"], ["created_at", "2020-03-30 13:24:33.434114"], ["updated_at", "2020-03-30 13:24:33.434114"]]
+  [1m[35m (2.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (19.8ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 1], ["LIMIT", 11]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mSong Create (0.9ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["artist_id", 1], ["title", "Only Girl"], ["created_at", "2020-03-30 13:25:33.227538"], ["updated_at", "2020-03-30 13:25:33.227538"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mSong Load (4.4ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 1], ["LIMIT", 11]]
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 1], ["LIMIT", 11]]
+  [1m[35m (25.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Create (0.8ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Sia"], ["hometown", "Sydney"], ["img", "https://pbs.twimg.com/profile_images/692921625801592833/sny-shV1.png"], ["albums", 5], ["created_at", "2020-03-30 13:27:52.964519"], ["updated_at", "2020-03-30 13:27:52.964519"]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (25.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mArtist Create (1.8ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "Adele"], ["hometown", "London"], ["img", "https://pbs.twimg.com/profile_images/657199367556866048/EBEIl2ol.jpg"], ["albums", 3], ["created_at", "2020-03-30 13:28:07.365942"], ["updated_at", "2020-03-30 13:28:07.365942"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for ::1 at 2020-03-30 16:32:52 +0300
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 1143ms (Views: 1139.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:33:31 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 52ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:33:33 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:33:34 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 87ms (Views: 82.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:34:10 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (32.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (116.9ms)
+Completed 200 OK in 167ms (Views: 75.2ms | ActiveRecord: 87.1ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-30 16:34:19 +0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for ArtistsController):
+  
+actionpack (5.2.4.2) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.4.2) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.4.2) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.4.2) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.4.2) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.4.2) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.4.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-30 16:34:22 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (28.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 102ms (Views: 67.7ms | ActiveRecord: 28.4ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:37:07 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (17.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (46.3ms)
+Completed 200 OK in 110ms (Views: 75.6ms | ActiveRecord: 26.2ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-30 16:37:09 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 142ms (Views: 53.8ms | ActiveRecord: 55.6ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 16:40:07 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (555.3ms)
+Completed 500 Internal Server Error in 573ms (ActiveRecord: 7.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_artist_path' for #<#<Class:0x00007f803ae55760>:0x00007f803b6036d8>):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", new_artist_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___3423339917026536168_70094360326420'
+Started GET "/" for ::1 at 2020-03-30 16:42:13 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (25.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (482.2ms)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 26.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_artist_path' for #<#<Class:0x00007f803ae55760>:0x00007f803ae777e8>):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", new_artist_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___3423339917026536168_70094364361120'
+Started GET "/" for ::1 at 2020-03-30 16:43:03 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (33.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 82ms (Views: 44.6ms | ActiveRecord: 33.1ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-03-30 16:43:14 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.5ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 2], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 2], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 2], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 2], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/show.html.erb within layouts/application (432.7ms)
+Completed 500 Internal Server Error in 498ms (ActiveRecord: 69.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_song_path' for #<#<Class:0x00007f803ae55760>:0x00007f803b6ab108>):
+    1:   <h1><%= @artist.name %> Songs</h1>
+    2:   <%= link_to "New Song", new_song_path(:artist_id => @artist.id), { :class => "button waves-effect waves-light btn" } %>
+    3:   <br><br>
+    4: 
+    5:   <div class="row">
+  
+app/views/artists/show.html.erb:2:in `_app_views_artists_show_html_erb__3537887909249832774_70094364695860'
+Started GET "/" for ::1 at 2020-03-30 16:43:20 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (19.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 98ms (Views: 73.1ms | ActiveRecord: 19.4ms)
+
+
+Started GET "/artists/4" for ::1 at 2020-03-30 16:43:22 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (1.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (4.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 4], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 4], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.1ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 4], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Song Load (0.0ms)[0m  [1m[34mSELECT  "songs".* FROM "songs" WHERE "songs"."artist_id" = $1 LIMIT $2[0m  [["artist_id", 4], ["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/show.html.erb within layouts/application (311.4ms)
+Completed 500 Internal Server Error in 342ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `new_song_path' for #<#<Class:0x00007f803ae55760>:0x00007f803e34be60>):
+    1:   <h1><%= @artist.name %> Songs</h1>
+    2:   <%= link_to "New Song", new_song_path(:artist_id => @artist.id), { :class => "button waves-effect waves-light btn" } %>
+    3:   <br><br>
+    4: 
+    5:   <div class="row">
+  
+app/views/artists/show.html.erb:2:in `_app_views_artists_show_html_erb__3537887909249832774_70094388103900'
+Started GET "/" for ::1 at 2020-03-30 16:43:26 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (3.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:11
+  Rendered artists/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 79ms (Views: 69.6ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-03-30 16:44:27 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (87.9ms)
+  Rendered artists/new.html.erb within layouts/application (92.1ms)
+Completed 200 OK in 382ms (Views: 374.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/artists" for ::1 at 2020-03-30 16:44:31 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/artists"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-30 16:46:13 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (30.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (531.5ms)
+Completed 500 Internal Server Error in 543ms (ActiveRecord: 30.7ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_artist_path' for #<#<Class:0x00007f803ae55760>:0x00007f803ec42a28>):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", new_artist_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___3423339917026536168_70094392762740'
+Started GET "/patients/4" for ::1 at 2020-03-30 22:08:39 +0300
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/patients/4"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-30 22:08:48 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (2.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (523.0ms)
+Completed 500 Internal Server Error in 562ms (ActiveRecord: 11.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_artist_path' for #<#<Class:0x00007fda402f5928>:0x00007fda3f196a38>):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", new_artist_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___4415349857542603863_70287678223400'
+Started GET "/artists/new" for ::1 at 2020-03-30 22:10:55 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (147.1ms)
+  Rendered artists/new.html.erb within layouts/application (214.9ms)
+Completed 200 OK in 913ms (Views: 805.4ms | ActiveRecord: 74.4ms)
+
+
+Started POST "/artists" for ::1 at 2020-03-30 22:11:07 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/artists"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-03-30 22:11:52 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (466.5ms)
+Completed 500 Internal Server Error in 477ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_artist_path' for #<#<Class:0x00007fda429f2260>:0x00007fda44a8a2c0>):
+    1: 
+    2: 
+    3: <h1>All the Artists</h1>
+    4: <%= link_to "Add an Artist", new_artist_path %>
+    5: <br><br>
+  
+app/views/artists/index.html.erb:4:in `_app_views_artists_index_html_erb___4415349857542603863_70287715753140'
+Started GET "/" for ::1 at 2020-03-30 22:13:13 +0300
+  
+SyntaxError (/Users/test/Sei/project/muse/config/routes.rb:7: syntax error, unexpected ':', expecting =>
+...s/new", to: "artists#new", as : "new_artist"
+...                              ^):
+  
+config/routes.rb:7: syntax error, unexpected ':', expecting =>
+Started GET "/" for ::1 at 2020-03-30 22:13:28 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 63ms (Views: 52.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-03-30 22:13:31 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (3.4ms)
+  Rendered artists/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 82ms (Views: 42.5ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-03-30 22:14:59 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (3.8ms)
+  Rendered artists/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 74ms (Views: 47.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 22:15:01 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (584.8ms)
+Completed 500 Internal Server Error in 603ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `artists_new_path' for #<#<Class:0x00007fda44d1d780>:0x00007fda44e0ca60>
+Did you mean?  artists_path):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", artists_new_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+    4: 
+    5: <table class="striped bordered">
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___4415349857542603863_70287717591480'
+Started GET "/" for ::1 at 2020-03-30 22:15:05 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  Rendered artists/index.html.erb within layouts/application (440.4ms)
+Completed 500 Internal Server Error in 455ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `artists_new_path' for #<#<Class:0x00007fda44d1d780>:0x00007fda3fc415f0>
+Did you mean?  artists_path):
+    1: <h1>All the Artists</h1>
+    2: <%= link_to "Add an Artist", artists_new_path, { :class => "button waves-effect waves-light btn" } %>
+    3: <br><br>
+    4: 
+    5: <table class="striped bordered">
+  
+app/views/artists/index.html.erb:2:in `_app_views_artists_index_html_erb___4415349857542603863_70287674708060'
+Started GET "/" for ::1 at 2020-03-30 22:16:26 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (332.5ms)
+Completed 500 Internal Server Error in 348ms (ActiveRecord: 6.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `edit_artist_path' for #<#<Class:0x00007fda3f3f23b8>:0x00007fda3f3f0a18>
+Did you mean?  artist_edit_path):
+    21:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    22:         <td><%= artist.albums %></td>
+    23:         <td><%= artist.hometown %></td>
+    24:         <td><a class="btn-floating btn-large red" href="<%= edit_artist_path(artist) %>" >
+    25:            <em class="large material-icons">Edit Artist</em>
+    26:           </a>
+    27:         </td>
+  
+app/views/artists/index.html.erb:24:in `block in _app_views_artists_index_html_erb___4415349857542603863_70287670351320'
+app/views/artists/index.html.erb:18:in `_app_views_artists_index_html_erb___4415349857542603863_70287670351320'
+Started GET "/" for ::1 at 2020-03-30 22:16:55 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 37.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 22:18:12 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (41.7ms)
+Completed 200 OK in 80ms (Views: 47.7ms | ActiveRecord: 25.9ms)
+
+
+Started GET "/" for ::1 at 2020-03-30 22:18:40 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (4.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 62ms (Views: 45.6ms | ActiveRecord: 10.0ms)
+
+
+Started DELETE "/artists/5" for ::1 at 2020-03-30 22:18:45 +0300
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"IkVPoNA4TRnwthCd6RRt5u9LLtoCxQ8mFIqgFB2Ti2dBLV3vOl5WBqgvr26QwnPibNHVCGeICh6/Mi2NmlJ1hQ==", "id"=>"5"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mSong Load (0.7ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 5]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mSong Destroy (0.7ms)[0m  [1m[31mDELETE FROM "songs" WHERE "songs"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mArtist Destroy (0.8ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 5]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:34
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 84ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:18:45 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 63ms (Views: 59.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/artists/6" for ::1 at 2020-03-30 22:18:48 +0300
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Q3DaPjQ5gMx2j7Ep7cAu1r+E7+Yr53GeQe7SBhBEnBIgGMhx3l+b0y4WDtqUFjDSPB4UNE6qdKbqVl+fl4Vi8A==", "id"=>"6"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mSong Load (0.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 6]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mArtist Destroy (1.4ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 6]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:34
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 12ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:18:48 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 48ms (Views: 44.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:21:27 +0300
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (28.6ms)
+Completed 200 OK in 529ms (Views: 504.3ms | ActiveRecord: 9.4ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:23:37 +0300
+  
+ArgumentError (Invalid route name, already in use: 'new_artist' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/artists" for ::1 at 2020-03-30 22:25:34 +0300
+  
+ArgumentError (Invalid route name, already in use: 'new_artist' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:12:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started POST "/artists" for ::1 at 2020-03-30 22:25:43 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mmHyPRqVPLstxs0NYd9dTHebPzeTmk9e9KlwB7pdyhz5CeBy8PMnpHVfcv4YCUNI9AHE5fbXSmZfEf2ePZw0/g==", "artist"=>{"name"=>"", "albums"=>"", "hometown"=>"", "img"=>""}, "commit"=>"Submit"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (21.1ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["name", ""], ["hometown", ""], ["img", ""], ["created_at", "2020-03-30 19:25:43.693343"], ["updated_at", "2020-03-30 19:25:43.693343"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 86ms (ActiveRecord: 62.8ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:25:43 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (22.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 83ms (Views: 57.7ms | ActiveRecord: 22.1ms)
+
+
+Started DELETE "/artists/8" for ::1 at 2020-03-30 22:25:49 +0300
+Processing by ArtistsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"lLmY2fT+AcsKjL1f3/NLjvi79mGAqMge0O3I4+3rhB730YqWHpga1FIVAqymJVWKeyENs+XlzSZ7VUV6aip6/A==", "id"=>"8"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mSong Load (1.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 8]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[36mArtist Destroy (2.1ms)[0m  [1m[31mDELETE FROM "artists" WHERE "artists"."id" = $1[0m  [["id", 8]]
+  ↳ app/controllers/artists_controller.rb:34
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:34
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 87ms (ActiveRecord: 40.7ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:25:50 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (15.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 66ms (Views: 47.4ms | ActiveRecord: 15.7ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:26:07 +0300
+  
+ArgumentError (Invalid route name, already in use: 'artist' 
+You may have defined two routes with the same name using the `:as` option, or you may be overriding a route already defined by a resource with the same naming. For the latter, you can restrict the routes created with `resources` as explained here: 
+http://guides.rubyonrails.org/routing.html#restricting-the-routes-created):
+  
+config/routes.rb:13:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/artists" for ::1 at 2020-03-30 22:26:48 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 71ms (Views: 59.4ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/artists/1/edit" for ::1 at 2020-03-30 22:26:52 +0300
+Processing by ArtistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:22
+  Rendering artists/edit.html.erb within layouts/application
+  Rendered artists/_form.html.erb (13.5ms)
+  Rendered artists/edit.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 83ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/artists/1" for ::1 at 2020-03-30 22:26:54 +0300
+Processing by ArtistsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+XjP+VEtYoTH3M39u9qpBvTimmrCbLra/bYEsNLVp3MSkqtS/bswJsjdvYVORvGuUYonziUeZ4FpGhaFbsEqQg==", "artist"=>{"name"=>"Rihanna", "albums"=>"6", "hometown"=>"Barbados", "img"=>"http://mccarthyamp.com/wp-content/uploads/2016/02/23445669273_bfc7c4062b_b.jpg"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[36mArtist Load (3.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:27
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:28
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:28
+Redirected to http://localhost:3000/artists/1
+Completed 302 Found in 12ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-30 22:26:54 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (3.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (48.5ms)
+Completed 200 OK in 104ms (Views: 61.6ms | ActiveRecord: 30.5ms)
+
+
+Started GET "/songs/new?artist_id=1" for ::1 at 2020-03-30 22:26:58 +0300
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (1.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:4
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/_form.html.erb (20.8ms)
+  Rendered songs/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 80ms (Views: 72.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/songs" for ::1 at 2020-03-30 22:27:02 +0300
+Processing by SongsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UkwENFYhlJ6wbQPlSedEWdn4Wi4+5+4UNnMtzeO2aKT1kmJqs7XfvgNCoXruuhuU6KUt41JzJARol+HVGNdB5w==", "song"=>{"artist_id"=>"1", "title"=>"fghj", "genre"=>"ghj"}, "commit"=>"Submit"}
+  [1m[36mArtist Load (0.9ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:11
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/songs_controller.rb:12
+  [1m[36mArtist Load (21.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:12
+  [1m[36mSong Create (0.9ms)[0m  [1m[32mINSERT INTO "songs" ("artist_id", "title", "genre", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["artist_id", 1], ["title", "fghj"], ["genre", "ghj"], ["created_at", "2020-03-30 19:27:02.918279"], ["updated_at", "2020-03-30 19:27:02.918279"]]
+  ↳ app/controllers/songs_controller.rb:12
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/songs_controller.rb:12
+Redirected to http://localhost:3000/artists/1
+Completed 302 Found in 39ms (ActiveRecord: 24.7ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-30 22:27:02 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (13.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (18.5ms)
+Completed 200 OK in 62ms (Views: 43.8ms | ActiveRecord: 13.8ms)
+
+
+Started GET "/songs/new?artist_id=1" for ::1 at 2020-03-30 22:27:05 +0300
+Processing by SongsController#new as HTML
+  Parameters: {"artist_id"=>"1"}
+  [1m[36mArtist Load (1.1ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/songs_controller.rb:4
+  Rendering songs/new.html.erb within layouts/application
+  Rendered songs/_form.html.erb (3.3ms)
+  Rendered songs/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 63ms (Views: 53.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-03-30 22:27:11 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 48ms (Views: 41.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:27:14 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-03-30 22:27:17 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (18.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 76ms (Views: 49.3ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/artists/4" for ::1 at 2020-03-30 22:27:26 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (16.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 4]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 72ms (Views: 45.4ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/artists" for ::1 at 2020-03-30 22:27:42 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (6.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 114ms (Views: 79.0ms | ActiveRecord: 25.0ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-03-30 22:27:45 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (3.8ms)
+  Rendered artists/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 66ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/2" for ::1 at 2020-03-30 22:28:17 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 2]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (32.1ms)
+Completed 200 OK in 110ms (Views: 74.2ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/todos" for ::1 at 2020-04-01 13:18:21 +0300
+  [1m[35m (27.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/todos"):
+  
+actionpack (5.2.4.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.4.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.4.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.4.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.4.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.4.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.4.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.4) lib/puma/configuration.rb:227:in `call'
+puma (3.12.4) lib/puma/server.rb:675:in `handle_request'
+puma (3.12.4) lib/puma/server.rb:476:in `process_client'
+puma (3.12.4) lib/puma/server.rb:334:in `block in run'
+puma (3.12.4) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-04-01 13:18:23 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (60.6ms)
+Completed 200 OK in 577ms (Views: 515.7ms | ActiveRecord: 39.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 13:55:28 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (20.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (26.2ms)
+Completed 200 OK in 118ms (Views: 93.0ms | ActiveRecord: 20.1ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 14:16:49 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 126ms (Views: 113.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-04-01 14:16:51 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (24.8ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (148.1ms)
+Completed 200 OK in 304ms (Views: 125.0ms | ActiveRecord: 103.5ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-04-01 14:16:54 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (12.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (6.4ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (20.8ms)
+Completed 200 OK in 98ms (Views: 68.4ms | ActiveRecord: 18.6ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-04-01 14:16:55 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (19.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (0.6ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 191ms (Views: 158.9ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-04-01 14:16:58 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (18.3ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (19.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 120ms (Views: 67.9ms | ActiveRecord: 37.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 14:55:21 +0300
+  [1m[35m (10.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (225.5ms)
+Started GET "/" for ::1 at 2020-04-01 14:55:23 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (202.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (227.8ms)
+Started GET "/" for ::1 at 2020-04-01 14:55:50 +0300
+Completed 200 OK in 31158ms (Views: 30920.9ms | ActiveRecord: 113.9ms)
+
+
+Processing by ArtistsController#index as HTML
+Completed 200 OK in 28906ms (Views: 28692.8ms | ActiveRecord: 202.1ms)
+
+
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1579.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (1599.8ms)
+Completed 200 OK in 2203ms (Views: 533.7ms | ActiveRecord: 1579.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 14:59:13 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (15.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (515.2ms)
+Completed 500 Internal Server Error in 658ms (ActiveRecord: 453.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'text/css'
+Checked in these paths: 
+  /Users/test/Sei/project/muse/app/assets/config
+  /Users/test/Sei/project/muse/app/assets/images
+  /Users/test/Sei/project/muse/app/assets/javascripts
+  /Users/test/Sei/project/muse/app/assets/stylesheets
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/jquery-rails-4.3.5/vendor/assets/javascripts
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.4.2/lib/assets/compiled
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.4.2/app/assets/javascripts
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.4.2/lib/assets/compiled
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /Users/test/Sei/project/muse/node_modules
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/popper_js-1.16.0/assets/javascripts
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.3.1/assets/stylesheets
+  /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-4.3.1/assets/javascripts):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/stylesheets/application.scss:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__1262615340694583540_70228748714000'
+Started GET "/" for ::1 at 2020-04-01 15:00:25 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (10.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 18025ms (Views: 18007.4ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:02:30 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (2.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 117ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_nav with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/test/Sei/project/muse/app/views"
+):
+    11: 
+    12:   <body>
+    13: 
+    14:    <%= render 'layouts/nav' %>
+    15: 
+    16:    
+    17:     <%= yield %>
+  
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb__1262615340694583540_70228747059520'
+Started GET "/" for ::1 at 2020-04-01 15:05:01 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (22.0ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (33.7ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 320ms (Views: 278.6ms | ActiveRecord: 22.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:06:10 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (5.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:18
+  Rendered artists/index.html.erb within layouts/application (22.3ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 347ms (Views: 307.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:10:08 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (25.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (46.1ms)
+  Rendered layouts/_nav.html.erb (2.6ms)
+Completed 200 OK in 516ms (Views: 476.0ms | ActiveRecord: 25.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:10:29 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (29.9ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (39.6ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 312ms (Views: 273.1ms | ActiveRecord: 29.9ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-04-01 15:10:34 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (114.6ms)
+  Rendered artists/new.html.erb within layouts/application (129.2ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 331ms (Views: 315.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/artists/1" for ::1 at 2020-04-01 15:10:38 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (2.6ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:7
+  Rendering artists/show.html.erb within layouts/application
+  [1m[36mSong Load (26.0ms)[0m  [1m[34mSELECT "songs".* FROM "songs" WHERE "songs"."artist_id" = $1[0m  [["artist_id", 1]]
+  ↳ app/views/artists/show.html.erb:6
+  Rendered artists/show.html.erb within layouts/application (148.7ms)
+  Rendered layouts/_nav.html.erb (1.8ms)
+Completed 200 OK in 390ms (Views: 200.5ms | ActiveRecord: 103.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:23:40 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (40.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (53.1ms)
+  Rendered layouts/_nav.html.erb (1.9ms)
+Completed 200 OK in 17048ms (Views: 16998.2ms | ActiveRecord: 40.8ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 15:24:06 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (13.7ms)
+  Rendered layouts/_nav.html.erb (2.0ms)
+Completed 200 OK in 613ms (Views: 602.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/artists/1/edit" for ::1 at 2020-04-01 15:24:39 +0300
+Processing by ArtistsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mArtist Load (1.2ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:22
+  Rendering artists/edit.html.erb within layouts/application
+  Rendered artists/_form.html.erb (10.4ms)
+  Rendered artists/edit.html.erb within layouts/application (20.9ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+Completed 200 OK in 253ms (Views: 194.9ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:01:57 +0300
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.3ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (28.1ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 715ms (Views: 688.2ms | ActiveRecord: 7.9ms)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20200401161625)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (13.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20200401161625_devise_create_users.rb:5
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20200401161625_devise_create_users.rb:39
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20200401161625_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200401161625"]]
+  ↳ bin/rails:9
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.9ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/sign_in" for ::1 at 2020-04-01 19:18:19 +0300
+  
+NoMethodError (undefined method `devise_for' for #<ActionDispatch::Routing::Mapper:0x00007f9aaf4f61a8>):
+  
+config/routes.rb:2:in `block in <top (required)>'
+config/routes.rb:1:in `<top (required)>'
+Started GET "/" for ::1 at 2020-04-01 19:19:01 +0300
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (32.4ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 541ms (Views: 512.7ms | ActiveRecord: 8.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2020-04-01 19:20:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (76.0ms)
+  Rendered layouts/_nav.html.erb (1.1ms)
+Completed 200 OK in 187ms (Views: 163.9ms | ActiveRecord: 4.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-04-01 19:20:55 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"42dpEnAGi7x8il5eTUB+9edpW0+MaXCZSFwP++iag3CAD3tdmmCQoyQT4a00lmDxZPOgnekkdaHj5IJib1t9kg==", "user"=>{"email"=>"af@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "af@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Completed 401 Unauthorized in 9ms (ActiveRecord: 2.3ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"42dpEnAGi7x8il5eTUB+9edpW0+MaXCZSFwP++iag3CAD3tdmmCQoyQT4a00lmDxZPOgnekkdaHj5IJib1t9kg==", "user"=>{"email"=>"af@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.9ms)
+  Rendered layouts/_nav.html.erb (1.0ms)
+Completed 200 OK in 274ms (Views: 93.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-04-01 19:20:58 +0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+  Rendered layouts/_nav.html.erb (0.7ms)
+Completed 200 OK in 60ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-04-01 19:22:34 +0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n0HLLEzW1S6V61DyCH4stSHhr7eu8/qS5Qz/BsUFpCMmrDT0R8gkzMxQ1HxaFryE0qYtKjFB61DZVaY7e2huZw==", "user"=>{"email"=>"af@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "af@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "af@gmail.com"], ["encrypted_password", "$2a$11$u6Ep4hOjjU6wPV9wHnW5juFP78P.iQKwEy77pM5iHHPQPIWLOjQmG"], ["created_at", "2020-04-01 16:22:35.148529"], ["updated_at", "2020-04-01 16:22:35.148529"]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Completed 302 Found in 216ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:22:35 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_nav.html.erb (0.9ms)
+Completed 200 OK in 54ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:24:19 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.8ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 52.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/artists/new" for ::1 at 2020-04-01 19:24:24 +0300
+Processing by ArtistsController#new as HTML
+  Rendering artists/new.html.erb within layouts/application
+  Rendered artists/_form.html.erb (2.9ms)
+  Rendered artists/new.html.erb within layouts/application (8.4ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 92ms (Views: 86.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/artists" for ::1 at 2020-04-01 19:24:40 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wOMO9v62uSPy2IehPuFhl51HFsAN86NtFbDYsoaDaY3PO4OC/S76FDVOHHHNluGMfCDcPmmE/KLxEhchIgATMw==", "artist"=>{"name"=>"vbnm", "albums"=>"ghjk", "hometown"=>"ghjk", "img"=>"ghjkl"}, "commit"=>"Submit"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "ghjk"], ["img", "ghjkl"], ["albums", 0], ["created_at", "2020-04-01 16:24:40.969954"], ["updated_at", "2020-04-01 16:24:40.969954"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 22ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:24:40 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202961508500'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202961508500'
+Started POST "/artists" for ::1 at 2020-04-01 19:25:09 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmkDIjbdT3IyokqW7+abJczbDqvKVUVg1nsOUSzk2bztARFt3LtUbWo79WWWMIUhT0H1ea8YQFh9w4PIqyUnXg==", "artist"=>{"name"=>"vbnm", "albums"=>"ghjk", "hometown"=>"ghjk", "img"=>"https://camo.githubusercontent.com/678fc26ec9f3bdd7aede229c50083f16cd21df51/68747470733a2f2f7261772e6769746875622e636f6d2f6865617274636f6d626f2f6465766973652f6d61737465722f6465766973652e706e67"}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "ghjk"], ["img", "https://camo.githubusercontent.com/678fc26ec9f3bdd7aede229c50083f16cd21df51/68747470733a2f2f7261772e6769746875622e636f6d2f6865617274636f6d626f2f6465766973652f6d61737465722f6465766973652e706e67"], ["albums", 0], ["created_at", "2020-04-01 16:25:09.052037"], ["updated_at", "2020-04-01 16:25:09.052037"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 8ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:25:09 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (24.5ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202968056400'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202968056400'
+Started POST "/artists" for ::1 at 2020-04-01 19:27:17 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmkDIjbdT3IyokqW7+abJczbDqvKVUVg1nsOUSzk2bztARFt3LtUbWo79WWWMIUhT0H1ea8YQFh9w4PIqyUnXg==", "artist"=>{"name"=>"vbnm", "albums"=>"ghjk", "hometown"=>"ghjk", "img"=>"https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.5ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "ghjk"], ["img", "https://www.imgacademy.com/themes/custom/imgacademy/images/helpbox-contact.jpg"], ["albums", 0], ["created_at", "2020-04-01 16:27:17.180200"], ["updated_at", "2020-04-01 16:27:17.180200"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 13ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:27:17 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (24.1ms)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996004820'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996004820'
+Started GET "/artists" for ::1 at 2020-04-01 19:27:30 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (14.9ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996705120'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996705120'
+Started POST "/artists" for ::1 at 2020-04-01 19:28:16 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmkDIjbdT3IyokqW7+abJczbDqvKVUVg1nsOUSzk2bztARFt3LtUbWo79WWWMIUhT0H1ea8YQFh9w4PIqyUnXg==", "artist"=>{"name"=>"vbnm", "albums"=>"ghjk", "hometown"=>"ghjk", "img"=>"http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.7ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "ghjk"], ["img", "http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"], ["albums", 0], ["created_at", "2020-04-01 16:28:16.373769"], ["updated_at", "2020-04-01 16:28:16.373769"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 49ms (ActiveRecord: 5.9ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:28:16 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202957837280'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202957837280'
+Started POST "/artists" for ::1 at 2020-04-01 19:29:06 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmkDIjbdT3IyokqW7+abJczbDqvKVUVg1nsOUSzk2bztARFt3LtUbWo79WWWMIUhT0H1ea8YQFh9w4PIqyUnXg==", "artist"=>{"name"=>"vbnm", "albums"=>"6", "hometown"=>"ghj", "img"=>"http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"}, "commit"=>"Submit"}
+  [1m[35m (2.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.6ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "ghj"], ["img", "http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"], ["albums", 6], ["created_at", "2020-04-01 16:29:06.882475"], ["updated_at", "2020-04-01 16:29:06.882475"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 9ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:29:06 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (2.1ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (11.9ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202958192360'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202958192360'
+Started POST "/artists" for ::1 at 2020-04-01 19:29:17 +0300
+Processing by ArtistsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jmkDIjbdT3IyokqW7+abJczbDqvKVUVg1nsOUSzk2bztARFt3LtUbWo79WWWMIUhT0H1ea8YQFh9w4PIqyUnXg==", "artist"=>{"name"=>"vbnm", "albums"=>"6", "hometown"=>"hjkhghjh", "img"=>"http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"}, "commit"=>"Submit"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[36mArtist Create (0.8ms)[0m  [1m[32mINSERT INTO "artists" ("name", "hometown", "img", "albums", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "vbnm"], ["hometown", "hjkhghjh"], ["img", "http://images.complex.com/complex/image/upload/t_in_content_image/drake-thank-me-later-album-cover_o6ek33.jpg"], ["albums", 6], ["created_at", "2020-04-01 16:29:17.633639"], ["updated_at", "2020-04-01 16:29:17.633639"]]
+  ↳ app/controllers/artists_controller.rb:16
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/artists_controller.rb:16
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 8ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:29:17 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (10.1ms)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202960573400'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202960573400'
+Started GET "/artists" for ::1 at 2020-04-01 19:29:25 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203003230880'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203003230880'
+Started GET "/" for ::1 at 2020-04-01 19:29:31 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203003786060'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203003786060'
+Started GET "/" for ::1 at 2020-04-01 19:29:34 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (3.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (11.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203004276540'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203004276540'
+Started GET "/" for ::1 at 2020-04-01 19:29:39 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203004781020'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203004781020'
+Started GET "/users/sign_in" for ::1 at 2020-04-01 19:29:48 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 7ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:29:48 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (9.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 9.4ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203005209420'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203005209420'
+Started GET "/users/sign_in" for ::1 at 2020-04-01 19:31:30 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:31:30 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (25.7ms)
+Completed 500 Internal Server Error in 38ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202955701420'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202955701420'
+Started GET "/" for ::1 at 2020-04-01 19:31:33 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (10.3ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202994656500'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202994656500'
+Started GET "/users/sign_in" for ::1 at 2020-04-01 19:31:37 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:31:37 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.6ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (10.2ms)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203003164140'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203003164140'
+Started GET "/" for ::1 at 2020-04-01 19:31:40 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.4ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203003559200'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203003559200'
+Started GET "/" for ::1 at 2020-04-01 19:33:16 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/test/Sei/project/muse/app/views/artists/index.html.erb:20: syntax error, unexpected tLABEL, expecting '='
+...ffer.append=( artist.img, size: "100x100", alt: "Artist Imag...
+...                          ^~~~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+...=( artist.img, size: "100x100", alt: "Artist Image" );@outpu...
+...                              ^):
+  
+app/views/artists/index.html.erb:20: syntax error, unexpected tLABEL, expecting '='
+app/views/artists/index.html.erb:20: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2020-04-01 19:33:59 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996621520'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996621520'
+Started GET "/" for ::1 at 2020-04-01 19:34:30 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70203004509180'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70203004509180'
+Started GET "/" for ::1 at 2020-04-01 19:35:07 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (4.2ms)
+  Rendered layouts/_nav.html.erb (0.8ms)
+Completed 200 OK in 75ms (Views: 70.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2020-04-01 19:37:02 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996201360'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996201360'
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:06 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:10 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:12 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:19 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:31 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:32 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:36 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:39 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:41 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:41 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:43 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:37:44 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:38:09 +0300
+Started POST "/__web_console/repl_sessions/1a354a7e1ec6858d84fb2d400d0a150b/trace" for ::1 at 2020-04-01 19:38:13 +0300
+Started GET "/" for ::1 at 2020-04-01 19:38:18 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202957279040'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202957279040'
+Started GET "/artists" for ::1 at 2020-04-01 19:38:41 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (11.7ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996410500'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996410500'
+Started GET "/artists" for ::1 at 2020-04-01 19:38:53 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (13.8ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (The asset "ghjkl" is not present in the asset pipeline.):
+    17:   <% @artists.each do |artist| %>
+    18:       <tr>
+    19:         <td><%= link_to artist.name, artist_path(artist) %></td>
+    20:         <td><%= image_tag(artist.img, size: "100x100", alt: "Artist Image") %></td>
+    21:         <td><%= artist.albums %></td>
+    22:         <td><%= artist.hometown %></td>
+    23:         <td><a class="btn btn-danger rounded-pill" href="<%= edit_artist_path(artist) %>" >
+  
+app/views/artists/index.html.erb:20:in `block in _app_views_artists_index_html_erb___4505346385489832022_70202996691360'
+app/views/artists/index.html.erb:17:in `_app_views_artists_index_html_erb___4505346385489832022_70202996691360'
+Started GET "/artists" for ::1 at 2020-04-01 19:39:00 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (3.9ms)
+  Rendered layouts/_nav.html.erb (0.6ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 19:42:44 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:3
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 7.9ms)
+
+
+  
+NoMethodError (undefined method `artist' for #<User:0x00007fb2ccbfd0e8>):
+  
+app/controllers/artists_controller.rb:3:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 19:43:30 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:3
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 7.4ms)
+
+
+  
+NoMethodError (undefined method `Artist' for #<User:0x00007fb2cd27cd60>):
+  
+app/controllers/artists_controller.rb:3:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 19:43:33 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:3
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `Artist' for #<User:0x00007fb2d230b380>):
+  
+app/controllers/artists_controller.rb:3:in `index'
+Started POST "/__web_console/repl_sessions/2018d8bd732d28a9c3c3578e7554c116/trace" for ::1 at 2020-04-01 19:43:43 +0300
+Started GET "/artists" for ::1 at 2020-04-01 19:44:22 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:3
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 6.4ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007fb2d14b8558>):
+  
+app/controllers/artists_controller.rb:3:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 19:45:04 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  [1m[36mArtist Load (0.7ms)[0m  [1m[34mSELECT "artists".* FROM "artists"[0m
+  ↳ app/views/artists/index.html.erb:17
+  Rendered artists/index.html.erb within layouts/application (36.9ms)
+  Rendered layouts/_nav.html.erb (1.3ms)
+Completed 200 OK in 169ms (Views: 155.0ms | ActiveRecord: 7.8ms)
+
+
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to AddUserRefToArtists (20200401170845)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "artists" ADD "user_id" bigint[0m
+  ↳ db/migrate/20200401170845_add_user_ref_to_artists.rb:3
+  [1m[35m (29.9ms)[0m  [1m[35mCREATE  INDEX  "index_artists_on_user_id" ON "artists"  ("user_id")[0m
+  ↳ db/migrate/20200401170845_add_user_ref_to_artists.rb:3
+  [1m[35m (5.1ms)[0m  [1m[35mALTER TABLE "artists" ADD CONSTRAINT "fk_rails_6bcbebdd23"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20200401170845_add_user_ref_to_artists.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20200401170845"]]
+  ↳ bin/rails:9
+  [1m[35m (1.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4720821722165836980)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mArtist Load (1.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mArtist Load (0.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" ORDER BY "artists"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-04-01 20:12:45 +0300
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (30.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 124ms (ActiveRecord: 49.8ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007feeb084e0a8>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-04-01 20:13:28 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 96ms (ActiveRecord: 32.5ms)
+
+
+  
+NoMethodError (undefined method `artist' for #<User:0x00007feeaea7c430>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-04-01 20:14:33 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 33.6ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007feeb0d01410>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 20:14:46 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007feeae670828>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/artists/1" for ::1 at 2020-04-01 20:14:53 +0300
+Processing by ArtistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (17.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/test/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.4.2/lib/active_record/log_subscriber.rb:98
+  [1m[36mArtist Load (3.5ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:56
+  [1m[36mCACHE Artist Load (0.0ms)[0m  [1m[34mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:12
+Redirected to http://localhost:3000/artists
+Completed 302 Found in 137ms (ActiveRecord: 55.5ms)
+
+
+Started GET "/artists" for ::1 at 2020-04-01 20:14:53 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.6ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007feeadecd738>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 20:15:59 +0300
+Processing by ArtistsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/artists_controller.rb:8
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 17.1ms)
+
+
+  
+NoMethodError (undefined method `artists' for #<User:0x00007feead39f280>):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 20:16:16 +0300
+Processing by ArtistsController#index as HTML
+Completed 500 Internal Server Error in 675ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `artists' for #<ArtistsController:0x00007feeae66b9e0>
+Did you mean?  artists_url):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/artists" for ::1 at 2020-04-01 20:16:32 +0300
+Processing by ArtistsController#index as HTML
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `all' for "http://localhost:3000/artists":String):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-04-01 20:16:45 +0300
+Processing by ArtistsController#index as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `all' for "http://localhost:3000/artists":String):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-04-01 20:16:49 +0300
+Processing by ArtistsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `all' for "http://localhost:3000/artists":String):
+  
+app/controllers/artists_controller.rb:8:in `index'
+Started GET "/" for ::1 at 2020-04-01 20:17:05 +0300
+Processing by ArtistsController#index as HTML
+  Rendering artists/index.html.erb within layouts/application
+  Rendered artists/index.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/test/Sei/project/muse/app/views/artists/index.html.erb:21: unknown regexp options - td
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:21: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+        <td>'.freeze;@output_buffer.append=( artist.albums );@output_buffer.safe_append='</
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:22: syntax error, unexpected '<'
+        <td>'.freeze;@output_buffer.ap...
+        ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:25: syntax error, unexpected '<'
+          </a>
+          ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:26: unknown regexp options - td
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected '<'
+         <td><a class="btn btn-danger r...
+         ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...n btn-danger rounded-pill" data-confirm="Are you sure you wa...
+...                           ^~~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...put_buffer.safe_append='?" data-method="delete" href="/artis...
+...                           ^~~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...d='?" data-method="delete" href="/artists/'.freeze;@output_b...
+...                           ^~~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+...utput_buffer.safe_append='" rel="nofollow"><i class="large m...
+...                            ^~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected '<'
+...safe_append='" rel="nofollow"><i class="large material-icons...
+...                              ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:27: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+...e material-icons">Delete Artist</i>
+...                         ^~~~~~
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:28: unknown regexp option - a
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:29: syntax error, unexpected '<'
+        </td>
+        ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:30: unknown regexp options - tr
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:33: unknown regexp options - tabl
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:37: unterminated string meets end of file
+          end
+             ^
+/Users/test/Sei/project/muse/app/views/artists/index.html.erb:37: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/artists/index.html.erb:21: unknown regexp options - td
+app/views/artists/index.html.erb:21: unmatched close parenthesis: /td> );@output_buffer.safe_append='
+app/views/artists/index.html.erb:22: syntax error, unexpected '<'
+app/views/artists/index.html.erb:25: syntax error, unexpected '<'
+app/views/artists/index.html.erb:26: unknown regexp options - td
+app/views/artists/index.html.erb:27: syntax error, unexpected '<'
+app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artists/index.html.erb:27: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/artists/index.html.erb:27: syntax error, unexpected '<'
+app/views/artists/index.html.erb:27: syntax error, unexpected tCONSTANT, expecting keyword_do or '{' or '('
+app/views/artists/index.html.erb:28: unknown regexp option - a
+app/views/artists/index.html.erb:29: syntax error, unexpected '<'
+app/views/artists/index.html.erb:30: unknown regexp options - tr
+app/views/artists/index.html.erb:33: unknown regexp options - tabl
+app/views/artists/index.html.erb:37: unterminated string meets end of file
+app/views/artists/index.html.erb:37: syntax error, unexpected end-of-input, expecting ')'
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:12 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:19 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:22 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:26 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:29 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:30 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:32 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:34 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:35 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:37 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:39 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:40 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:41 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:42 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:47 +0300
+Started POST "/__web_console/repl_sessions/c676b9956f8e2440b872d24ff60f3514/trace" for ::1 at 2020-04-01 20:17:47 +0300
